@@ -8,8 +8,17 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3A6355;
-  background: #2d2b30;
+  /* color: #3A6355      -->  rgb(58, 99, 85) */
+  /* background: #2d2b30 -->  rgb(45, 43, 48) */
+  
+  /* 
+    Switched the text-color and made it the background
+    Switched background and made it text-color with adjustment
+    Now has contrast ratio of 6.5 instead of 2.1
+    Still keeps 'frog' color
+  */ 
+  color: rgb(255, 255, 150);
+  background: rgb(58, 99, 85);
 }
 
 /* Link Styles */
@@ -88,14 +97,16 @@ header .name{
   font-weight: 600;
   padding: 20px;
   text-transform: uppercase;
-  color: #781125
+  /* color: #781125 --> rgb(120, 17, 37); */
+  color: rgb(17, 255, 37);
 }
 
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
+  /*border-top: 4px solid #781125;*/
+  border-top: 4px solid rgb(17, 255, 37);
   clear: both;
 }
 .card:hover {
@@ -120,8 +131,9 @@ header .name{
 .heading{
   font-size: 2em;
   text-transform: uppercase;
-  color: #781125;
   margin-top: 10px;
+  /* color: #781125 --> rgb(120, 17, 37); */
+  color: rgb(17, 255, 37);
 }
 
 /* Footer styles */
