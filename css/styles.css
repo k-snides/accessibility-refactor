@@ -30,18 +30,30 @@ body {
 
 /* Link Styles */
 
-a {
+nav a,
+.card a {
   text-decoration: none;
-  color: #999;
+  /*color: #999;*/
+  color: #fff;
+  
+  transition: all .5s;
 }
 
-a:hover {
-  color: #999;
+nav a:hover,
+nav a:focus,
+.card a:hover,
+.card a:focus {
+  /*color: #999;*/
+  color: #eee;
+  padding-bottom: 5px;
+    
+  border-bottom: 3px solid #eee;
 }
 
 /* Section Styles */
 
-.main-nav {
+/* .main-nav <-- changed to nav element for better semantics */
+nav {
   width: 100%;
   background: rgba(45, 43, 48, 0.8);
   min-height: 30px;
@@ -70,13 +82,13 @@ a:hover {
   padding: 5px 10px 10px 10px;
 }
 
-.nav a {
+/*.nav a {
   transition: all .5s;
 }
 
 .nav a:hover {
   color: white
-}
+}*/
 
 header {
   text-align: center;
@@ -127,11 +139,13 @@ header .name{
   padding: 20px 40px 40px;
   text-align: left;
   /*border-top: 4px solid #781125;*/
-  border-top: 4px solid rgb(17, 255, 37);
+  /*border-top: 4px solid rgb(17, 255, 37);*/
+  border-top: 4px solid #96731A;;
   clear: both;
 }
 .card:hover {
-  border-color: #96731A;
+  /*border-color: #96731A;*/
+  border-color: rgb(17, 255, 37)
 }
 
 
@@ -184,14 +198,20 @@ footer ul li {
 a.social {
   display: inline-block;
   margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
+  /*width: 30px;*/
+  /*height: 30px;*/
+  /*background-size: 30px 30px;*/
   opacity: .4;
   transition: all .5s;
 }
 
-a.twitter {
+/* 
+  Meaningful images should not be used in element backgrounds.
+  These social links were removed as background images
+  and used as <img> tags and with the alt attribute
+*/
+
+/*a.twitter {
   background-image: url(../img/twitter-32.png);
 }
 
@@ -201,16 +221,30 @@ a.youtube {
 
 a.spotify {
   background-image: url(../img/spotify-32.png);
-}
+}*/
 
+/*a.social:hover,*/
+a.social:focus {
+  opacity: 1;
+  outline: 1px dotted #eee;
+}
 a.social:hover {
   opacity: 1;
+  /*outline: 1px dotted #eee;*/
 }
+
 .clearfix {
   clear: both;
 }
 
-/* Styles for larger screens */
+
+
+
+
+
+/* ==========================================
+--- Styles for larger screens ---
+========================================== */
 @media screen and (min-width: 840px) {
 
   .flex {
