@@ -14,3 +14,21 @@ pre {
   height: 0%;
   padding: 10px;
 }
+
+/* Table Styles */
+caption {
+	text-transform: uppercase;
+}
+
+th, td {
+	padding: 5px 15px;
+	border: 1px solid rgb(58, 99, 85);
+}
+
+th {
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background: rgb(58, 99, 85);
+}
