@@ -16,7 +16,38 @@ form {
 }
 .newsletter{
   text-align: right;
+}
 
+
+fieldset {
+  margin-bottom: 1em;
+}
+
+legend {
+  color: rgb(17, 255, 37);
+  font-size: 1.2em;
+}
+
+label {
+  margin-right: 2em;
+}
+
+label[for="favorite-song"] {
+  vertical-align: top;
+}
+
+label:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  background: #ddd;
+  border: 3px solid rgb(17, 255, 37);
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 1em;
 }
 
 

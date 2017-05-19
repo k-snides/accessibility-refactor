@@ -25,18 +25,36 @@
 
     <main>
       <h3>Survey</h3>
+
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg">
           <div class="container">
-            <form class = "survey">
-              <p>Who is your favorite band member:</p>
+            <form class="survey">
+              <!-- <p>Who is your favorite band member:</p>
               <input type="radio" name="res" value="John"> John
               <input type="radio" name="res" value="Hazzard"> Hazzard
               <input type="radio" name="res" value="Bob"> Bob
-              <input type="radio" name="res" value="Sally"> Sally
+              <input type="radio" name="res" value="Sally"> Sally -->
 
-              <p>What is your favorite album:</p>
+              <!-- Original code above, revised below: -->
+              <fieldset>
+                <legend>Who is your favorite band member:</legend>
+                
+                <input type="radio" name="res" id="john" value="John"> 
+                <label for="john">John</label>
+
+                <input type="radio" name="res" id="hazzard" value="Hazzard">
+                <label for="hazzard">Hazzard</label>
+
+                <input type="radio" name="res" id="bob" value="Bob">
+                <label for="bob">Bob</label>
+
+                <input type="radio" name="res" id="sally" value="Sally">
+                <label for="sally">Sally</label>
+                </fieldset>
+
+              <!-- <p>What is your favorite album:</p>
               <select id="albums" name="select">
                 <option value="1">Party For An Angel</option>
                 <option value="2">A Day Of Old</option>
@@ -49,28 +67,80 @@
                 <option value="9">Heroic Forever</option>
                 <option value="10">Midnight Fires</option>
                 <option value="11">Street Of The Rider</option>
-              </select>
+              </select> -->
 
-              <p>What is your favorite song:</p>
-              <textarea></textarea>
+              <!-- Original code above, revised below: -->
+              <fieldset>
+                <legend>What is your favorite album:</legend>
+                
+                <label for="albums">Favorite Album: </label>
+                <select id="albums" name="select">
+                  <option value="2">A Day Of Old</option>
+                  <option value="4">Diamond Fireworks</option>
+                  <option value="5">Enjoy Your Desire</option>
+                  <option value="3">Finding My Shadow</option>
+                  <option value="9">Heroic Forever</option>
+                  <option value="10">Midnight Fires</option>
+                  <option value="7">Music Of My Life</option>
+                  <option value="1">Party For An Angel</option>
+                  <option value="8">Song For Yesterday</option>
+                  <option value="11">Street Of The Rider</option>
+                  <option value="6">This Is For You</option>
+                </select>
+              </fieldset>
+
+              <!-- <p>What is your favorite song:</p>
+              <textarea></textarea> -->
+
+              <!-- Original code above, revised below: -->
+              <fieldset>
+                <legend>What is your favorite song:</legend>
+
+                <label for="favorite-song">Favorite Song: </label>
+                <textarea id="favorite-song" name="favorite-song"></textarea>
+              </fieldset>
             </form>
-          </div>
-        </div>
-      </div>
+          </div><!-- /.container -->
+        </div><!-- /.flex -->
+      </div><!-- /.card -->
+
       <h3>Newsletter</h3>
+
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg">
             <div class="container">
               <form class="newsletter">
-                  <p>Name: <input type ="text" name="textfield"></p>
-                  <p>Email: <input type ="email" name="textfield"></p>
-                  <p>Retype Email: <input type ="email" name="textfield"></p>
+                <!-- <p>Name: <input type ="text" name="textfield"></p>
+                <p>Email: <input type ="email" name="textfield"></p>
+                <p>Retype Email: <input type ="email" name="textfield"></p>
+                <button type="submit">Sign Up</button> -->
+
+                <!-- Original code above, revised below: -->
+                <fieldset>
+                  <legend>Contact Information</legend>
+                  
+                  <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type ="text" id="name" name="name">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type ="email" id="email" name="email">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="retype-email">Retype Email:</label>
+                    <input type ="email" id="retype-email" name="retype-email">
+                  </div>
+                  
                   <button type="submit">Sign Up</button>
+                </fieldset>
               </form>
-            </div>
-        </div>
-      </div>
+            </div><!-- /.container -->
+        </div><!-- /.flex -->
+      </div><!-- /.card -->
     </main>
 
     <footer>
