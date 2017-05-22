@@ -10,25 +10,27 @@
   </head>
 
   <body>
-    <nav>
+    <a href="#main">Skip to main content</a>
+    <nav role="navigation">
       <ul class="nav">
+        <h2 class="outliner">Navigation</h2>
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li>Survey</li>
       </ul>
     </nav>
 
-    <header>
+    <header role="banner">
       <h1>Accessible Frog</h1>
       <h2>We make awesome music</h2>
     </header>
 
-    <main>
+    <main id="main" role="main">
       <h3>Survey</h3>
 
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/concert01.jpg">
+          <img class="photo" src="img/concert01.jpg" alt="Crowd cheering">
           <div class="container">
             <form class="survey">
               <!-- <p>Who is your favorite band member:</p>
@@ -108,7 +110,7 @@
 
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/the_band.jpg">
+          <img class="photo" src= "img/the_band.jpg" alt="Band performing on stage">
             <div class="container">
               <form class="newsletter">
                 <!-- <p>Name: <input type ="text" name="textfield"></p>
@@ -143,7 +145,7 @@
       </div><!-- /.card -->
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li>
           <a href="#" class="social twitter">

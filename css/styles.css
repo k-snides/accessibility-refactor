@@ -28,6 +28,18 @@ body {
   background: rgb(45, 43, 48);
 }
 
+a[href="#main"] {
+  background: rgb(45, 43, 48);
+  color: rgb(45, 43, 48);
+  position: fixed;
+  display: block;
+  width: 100%;
+}
+
+.outliner {
+  display: none;
+}
+
 /* Link Styles */
 
 nav a,
@@ -58,6 +70,7 @@ nav {
   background: rgba(45, 43, 48, 0.8);
   min-height: 30px;
   padding: 10px;
+  margin-top: 20px;
   position: fixed;
   text-align: center;
 }
