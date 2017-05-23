@@ -43,17 +43,25 @@
               <fieldset>
                 <legend>Who is your favorite band member:</legend>
                 
-                <input type="radio" name="res" id="john" value="John"> 
-                <label for="john">John</label>
+                <div class="form-group">
+                  <input type="radio" name="res" id="john" value="John"> 
+                  <label for="john">John</label>
+                </div>
 
-                <input type="radio" name="res" id="hazzard" value="Hazzard">
-                <label for="hazzard">Hazzard</label>
+                <div class="form-group">
+                  <input type="radio" name="res" id="hazzard" value="Hazzard">
+                  <label for="hazzard">Hazzard</label>
+                </div>
 
-                <input type="radio" name="res" id="bob" value="Bob">
-                <label for="bob">Bob</label>
+                <div class="form-group">
+                  <input type="radio" name="res" id="bob" value="Bob">
+                  <label for="bob">Bob</label>
+                </div>
 
-                <input type="radio" name="res" id="sally" value="Sally">
-                <label for="sally">Sally</label>
+                <div class="form-group">
+                  <input type="radio" name="res" id="sally" value="Sally">
+                  <label for="sally">Sally</label>
+                </div>
                 </fieldset>
 
               <!-- <p>What is your favorite album:</p>
@@ -99,7 +107,7 @@
                 <legend>What is your favorite song:</legend>
 
                 <label for="favorite-song">Favorite Song: </label>
-                <textarea id="favorite-song" name="favorite-song"></textarea>
+                <textarea id="favorite-song" name="favorite-song">favorite song</textarea>
               </fieldset>
             </form>
           </div><!-- /.container -->
@@ -124,20 +132,26 @@
                   
                   <div class="form-group">
                     <label for="name">Name: </label>
-                    <input type ="text" id="name" name="name">
+                    <input type="text" id="name" name="name" placeholder="name" aria-describeby="name-hint">
+                    <p id="name-hint">enter in your first and last name</p>
                   </div>
                   
                   <div class="form-group">
                     <label for="email">Email: </label>
-                    <input type ="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="email" aria-describeby="email-hint">
+                    <p id="email-hint">type in an email you check regularly</p>
                   </div>
                   
                   <div class="form-group">
                     <label for="retype-email">Retype Email:</label>
-                    <input type ="email" id="retype-email" name="retype-email">
+                    <input type="email" id="retype-email" name="retype-email" placeholder="retype email" aria-describeby="retype-email-hint">
+                    <p id="retype-email-hint">please retype your email to confirm</p>
                   </div>
                   
-                  <button type="submit">Sign Up</button>
+                  <div class="form-group">
+                    <button type="submit" id="submit-form" aria-describeby="submit-form-hint">Sign Up</button>
+                    <p id="submit-form-hint">By signing up we will receive your<br /> information and send you our newsletter.</p>
+                  </div>
                 </fieldset>
               </form>
             </div><!-- /.container -->

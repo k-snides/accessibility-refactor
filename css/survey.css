@@ -14,8 +14,15 @@ form {
 .container{
   text-align: center;
 }
+.survey .form-group {
+  display: inline-block;
+}
 .newsletter{
   text-align: right;
+}
+.newsletter fieldset {
+  padding-bottom: 2em;
+  /*width: 70%;*/
 }
 
 
@@ -36,6 +43,8 @@ label[for="favorite-song"] {
   vertical-align: top;
 }
 
+
+
 label:focus,
 input:focus,
 select:focus,
@@ -47,9 +56,32 @@ button:focus {
 
 .form-group {
   display: block;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  padding-top: 1em;
 }
 
+.form-group p {
+  height: 5px;
+  margin-top: -2px;
+  padding-top: 2px;
+}
+
+#name-hint,
+#email-hint,
+#retype-email-hint,
+#submit-form-hint {
+  color: rgb(45, 43, 48);
+  /*color: rgb(17, 255, 37);*/
+  /*font-size: 0.8em;*/
+}
+
+input[id="name"]:focus + #name-hint,
+input[id="email"]:focus + #email-hint,
+input[id="retype-email"]:focus + #retype-email-hint,
+button[id="submit-form"]:focus + #submit-form-hint {
+  color: rgb(17, 255, 37);
+  /*font-size: 0.8em;*/
+}
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
