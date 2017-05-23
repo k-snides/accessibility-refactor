@@ -36,17 +36,17 @@ a[href="#main"] {
   width: 100%;
 }
 
+/* Used for HTML5 Outliner to avoid Untitled Headings */
 .outliner {
   display: none;
 }
 
 /* Link Styles */
-
 nav a,
 .card a {
-  text-decoration: none;
+  text-decoration: underline;
   /*color: #999;*/
-  color: #fff;
+  color: #fff; /* <-- changed for better contrast ratio */
   
   transition: all .5s;
 }
@@ -58,12 +58,11 @@ nav a:focus,
   /*color: #999;*/
   color: #eee;
   padding-bottom: 5px;
-    
+  text-decoration: none;
   border-bottom: 3px solid #eee;
 }
 
 /* Section Styles */
-
 /* .main-nav <-- changed to nav element for better semantics */
 nav {
   width: 100%;
@@ -93,6 +92,7 @@ nav {
 
 .nav li {
   padding: 5px 10px 10px 10px;
+  color: rgb(17, 255, 37);
 }
 
 /*.nav a {
@@ -114,38 +114,46 @@ header {
 
 h1 {
   text-transform: uppercase;
-  font-size: 5em;
-  padding-top: 70px;
+  font-size: 3em;
+  padding-top: 50px;
   color: rgb(45, 45, 45);
 }
 
 h2 {
   text-transform: lowercase;
-  font-size: 2.25em;
+  font-size: 1em;
   letter-spacing: 0.15em;
   color: rgb(109, 18, 34);
 }
 
-.tag {
+/* 
+  Unused CSS Rule
+  Commented out for better Web Page Performance
+*/
+/*.tag {
   color: black;
   padding: 10px;
   letter-spacing: 5px;
-}
+}*/
 
 .name{
   font-weight: 300;
 }
 
-header .name{
+/* 
+  Unused CSS Rule
+  Commented out for better Web Page Performance
+*/
+/*header .name{
   font-size: 3em;
-}
-.tagline {
+}*/
+/*.tagline {
   font-weight: 600;
   padding: 20px;
   text-transform: uppercase;
-  /* color: #781125 --> rgb(120, 17, 37); */
+  /* color: #781125 --> rgb(120, 17, 37);
   color: rgb(17, 255, 37);
-}
+}*/
 
 .card {
   margin: 30px;
@@ -176,7 +184,7 @@ header .name{
   position: absolute;*/
 }
 
-/* .heading <-- class removed and switched to h3 */ 
+/* .heading <-- class removed and switched to h3 element */ 
 h3 {
   font-size: 2em;
   text-transform: uppercase;
@@ -217,6 +225,10 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
+a.social img {
+  width: 32px;
+  height: 32px;
+}
 
 /* 
   Meaningful images should not be used in element backgrounds.
@@ -246,10 +258,13 @@ a.social:hover {
   /*outline: 1px dotted #eee;*/
 }
 
-.clearfix {
+/* 
+  Unused CSS Rule
+  Commented out for better Web Page Performance
+*/
+/*.clearfix {
   clear: both;
-}
-
+}*/
 
 
 
@@ -271,11 +286,17 @@ a.social:hover {
     min-height: 470px;
   }
 
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 2.25em;
+  }
+
   .nav {
     max-width: 1200px;
     padding: 0 30px;
   }
-
 
   main {
     padding-top: 20px;

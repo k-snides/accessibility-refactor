@@ -1,19 +1,24 @@
 <!doctype html>
 <html lang="en">
   <head>
-      <meta charset="utf-8">
-      <link href="css/styles.css" rel="stylesheet" type="text/css" />
-      <link href="css/tour.css" rel="stylesheet" type="text/css" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-      <title>Accessible Frog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <title>Tour | Accessible Frog</title>
+    
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/tour.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <a href="#main">Skip to main content</a>
     <nav role="navigation">
+      <h3 class="outliner">Navigation</h3>
       <ul class="nav">
-        <h2 class="outliner">Navigation</h2>
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li>Tour</li>
         <li><a href="survey.html">Survey</a></li>
@@ -30,9 +35,9 @@
         <div class="flex">
         <!-- The following images are decorative for this project. -->
         <!-- Please see the project instructions for information on how to handle these. -->
-          <img  role="presentation" class="pick" src="img/guitar_pick.png" alt="">
+          <img class="pick" src="img/guitar_pick.png" alt="">
           <h3>Tour Dates</h3>
-          <img  role="presentation" class="pick" src="img/guitar_pick.png" alt="">
+          <img class="pick" src="img/guitar_pick.png" alt="">
           <!-- <pre>
                 Date                             Venue                             Location
                 Mar 10 - 12                 The Warfield                  San Francisco, CA
@@ -43,35 +48,39 @@
           <!-- Above is original code. Below is new table code -->
           <table>
             <caption>Tour Dates, Venues and Locations</caption>
-            <tr>
-              <th scope="col">Date</th>
-              <th scope="col">Venue</th>
-              <th scope="col">Location</th>
-            </tr>
-            <tr>
-              <td>Mar 10 - 12</td>
-              <td>The Warfield</td>
-              <td>San Francisco, CA</td>
-            </tr>
-            <tr>
-              <td>Mar 20 - 23</td>
-              <td>Pepsi Center</td>
-              <td>Denver, CO</td>
-            </tr>
-            <tr>
-              <td>April 2 - 4</td>
-              <td>Beacon Theatre</td>
-              <td>New York City, NY</td>
-            </tr>
-            <tr>
-              <td>April 10</td>
-              <td>Paramount Theatre</td>
-              <td>Seattle, WA</td>
-            </tr>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Venue</th>
+                <th scope="col">Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mar 10 - 12</td>
+                <td>The Warfield</td>
+                <td>San Francisco, CA</td>
+              </tr>
+              <tr>
+                <td>Mar 20 - 23</td>
+                <td>Pepsi Center</td>
+                <td>Denver, CO</td>
+              </tr>
+              <tr>
+                <td>April 2 - 4</td>
+                <td>Beacon Theatre</td>
+                <td>New York City, NY</td>
+              </tr>
+              <tr>
+                <td>April 10</td>
+                <td>Paramount Theatre</td>
+                <td>Seattle, WA</td>
+              </tr>
+            </tbody>
           </table>
-        </div>
-      </div>
-    </main>
+        </div><!-- /.flex -->
+      </div><!-- /.card -->
+    </main><!-- /#main -->
     
     <footer role="contentinfo">
       <ul>

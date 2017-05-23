@@ -1,13 +1,16 @@
 /* Tour page styles */
 
-pre {
+/* 
+  Unused CSS Rule
+  Commented out for better Web Page Performance
+*/
+/*pre {
   font-family: 'Open Sans', sans-serif;
-}
-
-.heading{
+}*/
+/*.heading{
   display: inline-block;
   margin: 0;
-}
+}*/
 
 .pick{
   width: 40px;
@@ -16,6 +19,10 @@ pre {
 }
 
 /* Table Styles */
+table {
+  margin-left: -60px;
+}
+
 caption {
 	text-transform: uppercase;
 }
@@ -31,4 +38,16 @@ th {
 
 tr:nth-child(even) {
 	background: rgb(58, 99, 85);
+}
+
+
+/* === Styles for larger screens === */
+@media screen and (min-width: 840px) {
+  table {
+    margin-left: 0;
+  }
+
+  th, td {
+    padding: 5px 15px;
+  }
 }
